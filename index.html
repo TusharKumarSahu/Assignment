@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .header div {
+            display: flex;
+            align-items: center;
+        }
+        .header div a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .header a:last-child {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .welcome-message {
+            position: relative;
+            text-align: center;
+            color: rgb(31, 12, 235);
+            border: 1px solid black;
+            height: 50vh;
+            min-height: 300px;
+        }
+        .welcome-message img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .welcome-message h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .content div {
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+        .video {
+            text-align: center;
+            padding: 10px;
+            max-width: 100%;
+            border: 1px solid black;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 1px solid black;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div width="70%">
+        <div class="header">
+            <div>
+                <img src="logo.jpeg" alt="Logo">
+                <a href="#">lisacosmetics.com</a>
+            </div>
+            <a href="contact.html">CONTACT-7077059083</a>
+        </div>
+        
+        <div class="welcome-message">
+            <img src="banner.jpeg" alt="Background Image">
+            
+        </div>
+        
+        <div class="content">
+            <div>
+                <p>Welcome to Lisa Cosmetics: Your Beauty and Lifestyle Destination
+
+                    At Lisa Cosmetics, we believe in celebrating your unique beauty and enhancing your lifestyle with a touch of elegance. Our online emporium is a haven for all things cosmetics, style, and comfort. Whether you’re on the lookout for luxurious makeup, high-quality Bluetooth speakers, cozy pajamas, or stunning contact lenses, you’ve arrived at your ultimate destination. Explore Our Collections:
+
+                    Cosmetics: Discover a world of color and creativity with our exquisite range of cosmetics. From bold lip shades to versatile eyeshadow palettes, our cosmetics collection empowers you to express your personality and play with your look. Get ready to paint the canvas of your face and make a statement that’s entirely you.
+                    Bluetooth Speakers: Elevate your auditory experience with our selection of premium Bluetooth speakers. Immerse yourself in crystal-clear sound as you listen to your favorite tunes, podcasts, or even conference calls. Our speakers are not just about audio quality; they’re a fusion of style and substance.
+                    Pajamas: Unwind and relax in style with our comfortable yet chic pajama collection. Whether you’re looking for cozy loungewear or stylish sleepwear, we have the perfect pieces to help you wind down after a long day and embrace the comfort of the night.
+                    Makeup Brushes: Elevate your makeup routine with the precision and elegance of our makeup brushes. Crafted with care, our brushes are designed to help you achieve flawless application and blend your makeup seamlessly. Unleash your inner artist and let our brushes be your tools of transformation.
+                    Contact Lenses: Transform your gaze with our range of mesmerizing contact lenses. Whether you want to enhance your natural eye color or experiment with a new shade, our contact lenses offer you the freedom to explore different looks and styles.</p>
+            </div>
+            <div>
+                <img src="image1.png" alt="Football Image 1">
+            </div>
+            <div>
+                <img src="iamge" alt="Football Image 2">
+            </div>
+            <div>
+                <p>Our Commitment to You:
+
+                    At Lisa Cosmetics, quality and customer satisfaction are our top priorities. We curate our products with meticulous attention to detail, ensuring that each item we offer meets the highest standards. With a dedication to delivering excellence, we aim to make your shopping experience seamless, enjoyable, and memorable.
+                    
+                    Join the Lisa Community:
+                    
+                    Beyond being a marketplace, Lisa Cosmetics is a community. We’re here to inspire, uplift, and empower you to embrace your individuality and explore new horizons. Join us on our social media platforms for makeup tips, style inspiration, and the latest updates on our collections.</p>
+            </div>
+        </div>
+        
+        <div class="video">
+            <iframe width="914" height="514" src="https://youtu.be/cXa0mMApG5U" title="SPAIN ROAD TO VICTORY 🔴 WORLD CUP 2010" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div class="footer">
+            <p>ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+</body>
+</html>
